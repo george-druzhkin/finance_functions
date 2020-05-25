@@ -15,8 +15,8 @@ start = dt.datetime(2015, 1, 1)
 end = dt.datetime.now()
 
 # Download data in accrdance to ticker, start and end date
-stocks = yf.download(tickers, start, end)['Adj Close']
-stocks = pd.DataFrame(stocks)
+stocks = pd.DataFrame(yf.download(tickers, start, end)['Adj Close'])
+stocks.columns = tickers
 
 # =============================================================================
 #                               RSI function
