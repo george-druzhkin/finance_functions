@@ -10,7 +10,7 @@ import datetime as dt
 #Initial inputs - input set(!!!) of tickers in the corresponding list
 #Change data in start/end variable as you wish
 
-tickers = ['AAPL']
+tickers = ['AAPL']  #you can add any number of them here
 start = dt.datetime(2015, 1, 1)
 end = dt.datetime.now()
 
